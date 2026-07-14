@@ -17,7 +17,7 @@
 
 ---
 
-## ✨ Fitur
+##  Fitur
 
 <table>
 <tr>
@@ -45,7 +45,7 @@
 
 ---
 
-## 🤖 Tech Stack
+##  Tech Stack
 
 ### Backend & AI
 
@@ -82,14 +82,14 @@
 
 ---
 
-## 📁 Struktur Proyek
+##  Struktur Proyek
 
 ```
-📦 chatbot/
-├── 📓 backend/
+ chatbot/
+├──  backend/
 │   └── chatbot.ipynb              # Pipeline lengkap: install → load PDF → chunk → embed → ChromaDB → load LLM → FastAPI
 │
-├── 🌐 chatbot-ui/                  # Frontend React
+├──  chatbot-ui/                  # Frontend React
 │   ├── src/
 │   │   ├── components/             # Komponen UI
 │   │   │   ├── ChatArea.jsx        # Daftar pesan dengan markdown
@@ -112,14 +112,14 @@
 │   ├── package.json
 │   └── vite.config.js
 │
-├── 📄 docs/                        # Dokumentasi & spesifikasi
-├── 🔒 .gitignore
-└── 📖 README.md
+├──  docs/                        # Dokumentasi & spesifikasi
+├──  .gitignore
+└──  README.md
 ```
 
 ---
 
-## 🚀 Panduan Instalasi
+##  Panduan Instalasi
 
 ### 1. Backend (Google Colab)
 
@@ -151,7 +151,7 @@ Buka `http://localhost:5173` di browser.
 
 ---
 
-## 📊 Evaluasi ROUGE
+##  Evaluasi ROUGE
 
 Sistem memiliki benchmark otomatis **90 pertanyaan** di **8 kategori PDF**:
 
@@ -203,7 +203,7 @@ xychart-beta
 
 ---
 
-## 🧠 Arsitektur
+##  Arsitektur
 
 ```mermaid
 graph LR
@@ -241,7 +241,7 @@ graph LR
 
 ---
 
-## 📦 Sumber PDF
+##  Sumber PDF
 
 | PDF | Topik |
 |-----|-------|
@@ -256,9 +256,9 @@ graph LR
 
 ---
 
-## 📝 Lisensi
+##  Lisensi
 
-Proyek ini untuk tujuan edukasi dan riset.
+Proyek ini untuk tujuan pembelajaran sahaja.
 
 ---
 
