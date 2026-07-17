@@ -279,7 +279,7 @@ Prompt yang dikirim ke model terdiri dari:
 |Kelebihan|Cepat, metadata filtering|Natural language, instruction following|
 |Kekurangan|Bergantung kualitas embedding|Butuh konteks yang relevan|
 
-## 5.6 Implementasi Model (Kode Lengkap)
+## 5.6 Implementasi Model
 
 ```python
 # ============================================================
