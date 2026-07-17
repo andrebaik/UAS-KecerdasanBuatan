@@ -1,8 +1,7 @@
 <div align="center">
-  <h1 align="center">
-    <span style="background: linear-gradient(90deg, #F77609, #E94560); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Chatbot RAG</span>
-  </h1>
-  <h3 align="center">Qwen2.5-3B • FastAPI • ChromaDB • React</h3>
+  <a href="https://github.com/andrebaik/UAS-KecerdasanBuatan">
+    <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=andrebaik&repo=UAS-KecerdasanBuatan&theme=dark&hide_border=true&bg_color=0D1117&title_color=F77609&icon_color=F77609&text_color=C9D1D9" />
+  </a>
   <p align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
