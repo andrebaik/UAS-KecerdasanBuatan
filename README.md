@@ -1,7 +1,9 @@
 <div align="center">
   <a href="https://github.com/andrebaik/UAS-KecerdasanBuatan">
-    <img height="180em" src="https://github-readme-stats.vercel.app/api/pin/?username=andrebaik&repo=UAS-KecerdasanBuatan&theme=dark&hide_border=true&bg_color=0D1117&title_color=F77609&icon_color=F77609&text_color=C9D1D9" />
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=andrebaik&repo=UAS-KecerdasanBuatan&theme=dark&hide_border=true&bg_color=0D1117&title_color=F77609&icon_color=F77609&text_color=C9D1D9" />
   </a>
+  <br/>
+  <img src="https://wakatime.com/badge/user/123456/project/UAS-KecerdasanBuatan.svg" alt="WakaTime" />
   <p align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
