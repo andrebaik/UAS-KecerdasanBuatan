@@ -579,10 +579,10 @@ Hasil evaluasi ROUGE menunjukkan rata-rata ROUGE-1 sebesar 0.067, ROUGE-2 sebesa
 
 |Tujuan|Status|Keterangan|
 |------|:----:|----------|
-|Mengimplementasikan metode RAG|✅ Tercapai|Pipeline retrieval + generation berfungsi penuh|
-|Mengintegrasikan ChromaDB|✅ Tercapai|ChromaDB berfungsi dengan 4.225 chunk dari 8 PDF|
-|Menggunakan Qwen2.5-3B-Instruct|✅ Tercapai|Model berjalan dengan kuantisasi 4-bit di Tesla T4|
-|Menghasilkan jawaban berdasarkan PDF|⚠️ Sebagian|Model mampu menjawab, namun ROUGE score masih rendah|
+|Mengimplementasikan metode RAG| Tercapai|Pipeline retrieval + generation berfungsi penuh|
+|Mengintegrasikan ChromaDB| Tercapai|ChromaDB berfungsi dengan 4.225 chunk dari 8 PDF|
+|Menggunakan Qwen2.5-3B-Instruct| Tercapai|Model berjalan dengan kuantisasi 4-bit di Tesla T4|
+|Menghasilkan jawaban berdasarkan PDF| Sebagian|Model mampu menjawab, namun ROUGE score masih rendah|
 
 ## 7.3 Kelebihan dan Keterbatasan Model
 
