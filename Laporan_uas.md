@@ -705,18 +705,18 @@ UAS-KecerdasanBuatan
 
 ### Software
 
-|Software|Versi|
-|---------|------|
-|Python|3.10|
-|Google Colab|Latest|
-|PyTorch|2.x|
-|Transformers|4.x|
-|FastAPI|0.115.x|
-|LangChain|0.3.x|
-|ChromaDB|0.5.x|
-|React|19.x|
-|Vite|8.x|
-|TailwindCSS|4.x|
+| Software | Versi |
+|----------|-------|
+| <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" height="22"/> | 3.10 |
+| <img src="https://img.shields.io/badge/Google%20Colab-F9AB00?style=flat&logo=googlecolab&logoColor=white" height="22"/> | Latest |
+| <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white" height="22"/> | 2.x |
+| <img src="https://img.shields.io/badge/Transformers-FF6F00?style=flat&logo=huggingface&logoColor=white" height="22"/> | 4.x |
+| <img src="https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white" height="22"/> | 0.115.x |
+| <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=chainlink&logoColor=white" height="22"/> | 0.3.x |
+| <img src="https://img.shields.io/badge/ChromaDB-4A154B?style=flat&logo=chromadb&logoColor=white" height="22"/> | 0.5.x |
+| <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" height="22"/> | 19.x |
+| <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white" height="22"/> | 8.x |
+| <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white" height="22"/> | 4.x |
 
 ## Lampiran D: Dataset
 
