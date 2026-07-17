@@ -499,7 +499,37 @@ Karena proyek ini merupakan sistem Question Answering berbasis Retrieval-Augment
 
 Evaluasi dilakukan menggunakan library `rouge_score` terhadap 90 pertanyaan di 8 kategori. Berikut hasil lengkapnya:
 
-| Kategori | Jumlah Soal | ROUGE-1 | ROUGE-2 | ROUGE-L |
+### ROUGE-1 (Unigram)
+
+```mermaid
+xychart-beta
+    title "ROUGE-1 per Kategori"
+    x-axis ["Java", "Coding", "GenAI", "MySQL", "Web", "Git", "Python", "Full"]
+    y-axis "ROUGE-1" 0 --> 0.2
+    bar [0.073, 0.097, 0.149, 0.043, 0.066, 0.036, 0.040, 0.063]
+```
+
+### ROUGE-2 (Bigram)
+
+```mermaid
+xychart-beta
+    title "ROUGE-2 per Kategori"
+    x-axis ["Java", "Coding", "GenAI", "MySQL", "Web", "Git", "Python", "Full"]
+    y-axis "ROUGE-2" 0 --> 0.1
+    bar [0.022, 0.050, 0.081, 0.006, 0.020, 0.008, 0.007, 0.015]
+```
+
+### ROUGE-L (Longest Common Subsequence)
+
+```mermaid
+xychart-beta
+    title "ROUGE-L per Kategori"
+    x-axis ["Java", "Coding", "GenAI", "MySQL", "Web", "Git", "Python", "Full"]
+    y-axis "ROUGE-L" 0 --> 0.2
+    bar [0.062, 0.085, 0.139, 0.041, 0.056, 0.034, 0.035, 0.057]
+```
+
+Sistem memiliki benchmark otomatis **90 pertanyaan** di **8 kategori PDF**:
 |----------|:-----------:|:-------:|:-------:|:-------:|
 | Java (Dasar Pemrograman) | 10 | 0.073 | 0.022 | 0.062 |
 | Coding Dasar | 10 | 0.097 | 0.050 | 0.085 |
@@ -751,3 +781,33 @@ UAS-KecerdasanBuatan
 ![Grafik Distribusi Chunk](data/eda_chunk.png)
 
 ![Grafik Distribusi Topik](data/eda_topik.png)
+
+### ROUGE-1 (Unigram)
+
+```mermaid
+xychart-beta
+    title "ROUGE-1 per Kategori"
+    x-axis ["Java", "Coding", "GenAI", "MySQL", "Web", "Git", "Python", "Full"]
+    y-axis "ROUGE-1" 0 --> 0.2
+    bar [0.073, 0.097, 0.149, 0.043, 0.066, 0.036, 0.040, 0.063]
+```
+
+### ROUGE-2 (Bigram)
+
+```mermaid
+xychart-beta
+    title "ROUGE-2 per Kategori"
+    x-axis ["Java", "Coding", "GenAI", "MySQL", "Web", "Git", "Python", "Full"]
+    y-axis "ROUGE-2" 0 --> 0.1
+    bar [0.022, 0.050, 0.081, 0.006, 0.020, 0.008, 0.007, 0.015]
+```
+
+### ROUGE-L (Longest Common Subsequence)
+
+```mermaid
+xychart-beta
+    title "ROUGE-L per Kategori"
+    x-axis ["Java", "Coding", "GenAI", "MySQL", "Web", "Git", "Python", "Full"]
+    y-axis "ROUGE-L" 0 --> 0.2
+    bar [0.062, 0.085, 0.139, 0.041, 0.056, 0.034, 0.035, 0.057]
+```
