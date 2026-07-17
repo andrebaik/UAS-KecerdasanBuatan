@@ -225,7 +225,7 @@ graph LR
 
 ---
 
-## 🛠️ Konfigurasi
+##  Konfigurasi
 
 | Variabel | Deskripsi | Default |
 |----------|-----------|---------|
