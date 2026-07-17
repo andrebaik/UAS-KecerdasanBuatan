@@ -119,71 +119,19 @@ Dataset memiliki karakteristik:
 
 Visualisasi berikut menunjukkan distribusi jumlah halaman dari setiap dokumen PDF. Data ini diperoleh dari hasil ekstraksi menggunakan PyPDFLoader.
 
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-pdfs = [
-    "Dasar Coding", "Panduan GenAI", "Web Dasar", "Python Learn",
-    "MySQL", "Dasar Prog.", "Pro Git", "Prog. Komputer"
-]
-pages = [180, 45, 200, 210, 85, 120, 310, 306]
-
-plt.figure(figsize=(10, 5))
-colors = ['#FF6B35', '#004E89', '#1A936F', '#FFC857', '#C71585', '#4169E1', '#DC143C', '#FF8C00']
-bars = plt.bar(pdfs, pages, color=colors, edgecolor='white', linewidth=1.5)
-plt.title('Distribusi Jumlah Halaman per Dokumen PDF', fontsize=14, fontweight='bold')
-plt.xlabel('Dokumen', fontsize=11)
-plt.ylabel('Jumlah Halaman', fontsize=11)
-plt.xticks(rotation=30, ha='right')
-
-for bar, val in zip(bars, pages):
-    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 5,
-             str(val), ha='center', va='bottom', fontsize=9)
-
-plt.tight_layout()
-plt.show()
-```
+![Grafik Distribusi Halaman](data/eda_halaman.png)
 
 **Insight:** Dokumen Pro Git memiliki jumlah halaman terbanyak (310 halaman), diikuti oleh Pemrograman Komputer (306 halaman). Dokumen Panduan GenAI memiliki jumlah halaman paling sedikit (45 halaman). Variasi ukuran ini menunjukkan bahwa proses chunking akan menghasilkan jumlah chunk yang bervariasi per dokumen.
 
 ## 3.2 Distribusi Jumlah Chunk per Dokumen
 
-```python
-avg_chars = 3000
-effective_chunk = 700 - 150
-chunks = [int(p * avg_chars / effective_chunk) for p in pages]
-
-plt.figure(figsize=(10, 5))
-bars = plt.bar(pdfs, chunks, color=colors, edgecolor='white', linewidth=1.5)
-plt.title('Estimasi Distribusi Jumlah Chunk per Dokumen', fontsize=14, fontweight='bold')
-plt.xlabel('Dokumen', fontsize=11)
-plt.ylabel('Jumlah Chunk', fontsize=11)
-plt.xticks(rotation=30, ha='right')
-
-for bar, val in zip(bars, chunks):
-    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 5,
-             str(val), ha='center', va='bottom', fontsize=9)
-
-plt.tight_layout()
-plt.show()
-```
+![Grafik Distribusi Chunk](data/eda_chunk.png)
 
 **Insight:** Total chunk yang dihasilkan adalah 4.225 chunk dari 1.449 halaman. Dokumen dengan jumlah halaman lebih banyak cenderung menghasilkan lebih banyak chunk, namun faktor kepadatan teks per halaman juga memengaruhi jumlah chunk aktual.
 
 ## 3.3 Distribusi Topik Dokumen
 
-```python
-topics = ['Pemrograman', 'Python', 'Git', 'SQL', 'Web', 'AI']
-counts = [2, 1, 1, 1, 1, 1]
-
-plt.figure(figsize=(8, 8))
-plt.pie(counts, labels=topics, autopct='%1.1f%%', startangle=90,
-        colors=['#FF6B35', '#004E89', '#DC143C', '#C71585', '#1A936F', '#FFC857'],
-        textprops={'fontsize': 12})
-plt.title('Distribusi Topik Dokumen PDF', fontsize=14, fontweight='bold')
-plt.show()
-```
+![Grafik Distribusi Topik](data/eda_topik.png)
 
 **Insight:** Topik pemrograman mendominasi dengan 2 dokumen (25%), sementara topik lainnya masing-masing 1 dokumen (12.5%). Seluruh dokumen berkaitan dengan bidang teknologi informasi sehingga distribusi topik relatif seimbang dalam domain yang sama.
 
@@ -551,17 +499,17 @@ Karena proyek ini merupakan sistem Question Answering berbasis Retrieval-Augment
 
 Evaluasi dilakukan menggunakan library `rouge_score` terhadap 90 pertanyaan di 8 kategori. Berikut hasil lengkapnya:
 
-|Kategori|Jumlah Soal|ROUGE-1|ROUGE-2|ROUGE-L|
-|--------|:---------:|:-----:|:-----:|:-----:|
-|Java (Dasar Pemrograman)|10|0.073|0.022|0.062|
-|Coding Dasar|10|0.097|0.050|0.085|
-|GenAI (Buku Panduan)|10|**0.149**|**0.081**|**0.139**|
-|MySQL|10|0.043|0.006|0.041|
-|Web Programming|10|0.066|0.020|0.056|
-|Git (ProGit)|10|0.036|0.008|0.034|
-|Python (PythonLearn)|20|0.040|0.007|0.035|
-|Komputer FULL|10|0.063|0.015|0.057|
-|**Rata-rata**|**90**|**0.067**|**0.024**|**0.061**|
+| Kategori | Jumlah Soal | ROUGE-1 | ROUGE-2 | ROUGE-L |
+|----------|:-----------:|:-------:|:-------:|:-------:|
+| Java (Dasar Pemrograman) | 10 | 0.073 | 0.022 | 0.062 |
+| Coding Dasar | 10 | 0.097 | 0.050 | 0.085 |
+| GenAI (Buku Panduan) | 10 | **0.149** | **0.081** | **0.139** |
+| MySQL | 10 | 0.043 | 0.006 | 0.041 |
+| Web Programming | 10 | 0.066 | 0.020 | 0.056 |
+| Git (ProGit) | 10 | 0.036 | 0.008 | 0.034 |
+| Python (PythonLearn) | 20 | 0.040 | 0.007 | 0.035 |
+| Komputer FULL | 10 | 0.063 | 0.015 | 0.057 |
+| **Rata-rata** | **90** | **0.067** | **0.024** | **0.061** |
 
 ## 6.4 Analisis Hasil
 
@@ -798,9 +746,8 @@ UAS-KecerdasanBuatan
 
 ## Lampiran F: Output Visualisasi EDA
 
-(Lampiran ini berisi grafik yang dihasilkan dari kode EDA pada Section 3. Grafik meliputi:
-1. Bar chart distribusi jumlah halaman per dokumen PDF
-2. Bar chart estimasi jumlah chunk per dokumen
-3. Pie chart distribusi topik dokumen
+![Grafik Distribusi Halaman](data/eda_halaman.png)
 
-Grafik dapat dihasilkan dengan menjalankan kode Python yang disediakan di Section 3.)
+![Grafik Distribusi Chunk](data/eda_chunk.png)
+
+![Grafik Distribusi Topik](data/eda_topik.png)
