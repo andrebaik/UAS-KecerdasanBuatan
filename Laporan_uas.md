@@ -4,7 +4,7 @@
 
 ---
 
-### Nama Kelompok
+### Amggota Kelompok
 
 - Mochamad Vicryandre Nurdin - 2406084
 - Andhika Eka Pratama - 2406085
