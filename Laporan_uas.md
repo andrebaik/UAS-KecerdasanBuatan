@@ -530,6 +530,8 @@ xychart-beta
 ```
 
 Sistem memiliki benchmark otomatis **90 pertanyaan** di **8 kategori PDF**:
+
+| Kategori | Jumlah Soal | ROUGE-1 | ROUGE-2 | ROUGE-L |
 |----------|:-----------:|:-------:|:-------:|:-------:|
 | Java (Dasar Pemrograman) | 10 | 0.073 | 0.022 | 0.062 |
 | Coding Dasar | 10 | 0.097 | 0.050 | 0.085 |
