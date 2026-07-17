@@ -552,8 +552,7 @@ export default function Presentation({ onStart }) {
             <div className="space-y-3 mb-10">
               {[
                 { name: "Mochamad Vicryandre Nurdin", role: "Pengembang" },
-                { name: "Julfa Nurhakiki", role: "Dokumentasi" },
-                { name: "Ainun Nazza", role: "Penguji" },
+                { name: "Andhika Eka P", role: "Dokumentasi" },
               ].map((m, i) => (
                 <div
                   key={i}
