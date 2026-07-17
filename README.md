@@ -1,14 +1,8 @@
 <div align="center">
-  <img src="https://wakatime.com/badge/user/65f031c8-430c-4562-bda7-a51b0d9ebb52/project/UAS-KecerdasanBuatan.svg" alt="WakaTime" />
-  <p align="center">
-    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-    <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-    <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" />
-    <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white" />
-    <img src="https://img.shields.io/badge/ChromaDB-4A154B?style=for-the-badge&logo=chromadb&logoColor=white" />
-    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-    <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  </p>
+  <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg" width="0" height="0" />
+  <h1 align="center">
+    <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Oxanium&size=36&pause=1000&color=F77609&width=600&center=true&vCenter=true&lines=Chatbot+RAG;Qwen2.5+3B+%7C+FastAPI+%7C+ChromaDB;8+PDF+%7C+RAG+Pipeline+%7C+Streaming" alt="Typing SVG" /></a>
+  </h1>
   <p align="center">
     <b>Chatbot RAG berbahasa Indonesia</b> — menggabungkan LLM <b>Qwen2.5-3B-Instruct</b> (4-bit quantized) dengan vector store <b>ChromaDB</b> dan backend <b>FastAPI</b>, dibungkus dalam frontend modern <b>React + TailwindCSS</b>.
   </p>
@@ -209,22 +203,47 @@ xychart-beta
 
 ##  Arsitektur
 
-```mermaid
-graph LR
-    A[File PDF<br/>8 buku] --> B[PyPDFLoader]
-    B --> C[RecursiveCharacter<br/>TextSplitter]
-    C --> D[BAAI/bge-m3<br/>Embeddings]
-    D --> E[(ChromaDB<br/>Vector Store)]
-    
-    F[Pertanyaan<br/>Pengguna] --> G{Deteksi Intent<br/>& Topik}
-    G --> H[ChromaDB<br/>Retriever]
-    E --> H
-    H --> I[Penyusun Konteks<br/>& Prompt]
-    
-    I --> J[Qwen2.5-3B-Instruct<br/>4-bit / Tesla T4]
-    J --> K[FastAPI<br/>Backend]
-    K --> L[Stream SSE]
-    L --> M[React + TailwindCSS<br/>Frontend]
+```
+                 START
+                   │
+                   ▼
+         Upload Dataset PDF
+                   │
+                   ▼
+         Ekstraksi Isi Dokumen (PyPDFLoader)
+                   │
+                   ▼
+           Text Splitting (700 char, overlap 150)
+                   │
+                   ▼
+          Embedding (BAAI/bge-m3)
+                   │
+                   ▼
+       Simpan ke ChromaDB
+                   │
+                   ▼
+       Pengguna Mengajukan Pertanyaan
+                   │
+                   ▼
+         Embedding Pertanyaan
+                   │
+                   ▼
+        Similarity Search (k=15)
+                   │
+                   ▼
+       Dokumen Paling Relevan
+                   │
+                   ▼
+         Prompt + Konteks
+                   │
+                   ▼
+      Qwen2.5-3B-Instruct (4-bit)
+                   │
+                   ▼
+         Jawaban Chatbot
+                   │
+                   ▼
+                   END
 ```
 
 ---
