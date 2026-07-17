@@ -1,16 +1,8 @@
 <div align="center">
-
-```
- ██████╗ ██████╗ ██████╗ ███████╗    ██████╗  ██████╗  ██████╗████████╗ ██████╗ ██████╗ 
-██╔════╝██╔═══██╗██╔══██╗██╔════╝    ██╔══██╗██╔═══██╗██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
-██║     ██║   ██║██████╔╝█████╗      ██████╔╝██║   ██║██║        ██║   ██║   ██║██████╔╝
-██║     ██║   ██║██╔══██╗██╔══╝      ██╔══██╗██║   ██║██║        ██║   ██║   ██║██╔══██╗
-╚██████╗╚██████╔╝██║  ██║███████╗    ██████╔╝╚██████╔╝╚██████╗   ██║   ╚██████╔╝██║  ██║
- ╚═════╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝    ╚═════╝  ╚═════╝  ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
-
-  <p align="center">
-    <code>> Qwen2.5-3B-Instruct | FastAPI | ChromaDB | 8 PDF | RAG Pipeline | Streaming</code>
-  </p>
+  <h1 align="center">
+    <span style="background: linear-gradient(90deg, #F77609, #E94560); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Chatbot RAG</span>
+  </h1>
+  <h3 align="center">Qwen2.5-3B • FastAPI • ChromaDB • React</h3>
   <p align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
