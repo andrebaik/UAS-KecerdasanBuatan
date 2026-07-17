@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/platane/platane/output/github-contribution-grid-snake-dark.svg" width="600" />
+  <img src="https://wakatime.com/badge/user/65f031c8-430c-4562-bda7-a51b0d9ebb52/project/UAS-KecerdasanBuatan.svg" alt="WakaTime" />
   <p align="center">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
     <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
